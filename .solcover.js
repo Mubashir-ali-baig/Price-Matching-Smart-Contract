@@ -7,7 +7,7 @@ if (!mnemonic) {
 }
 
 module.exports = {
-  istanbulReporter: ["html", "lcov"],
+  istanbulReporter: ["html", "lcov", "text"],
   onCompileComplete: async function (_config) {
     await run("typechain");
   },
